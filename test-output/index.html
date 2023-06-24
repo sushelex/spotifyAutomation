@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-All_Test_Suite" class="navigator-link">
+              <span class="suite-name border-failed">All Test Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-All_Test_Suite" class="navigator-link ">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-All_Test_Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-All_Test_Suite" class="navigator-link ">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-All_Test_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-All_Test_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-All_Test_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-All_Test_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-All_Test_Suite" class="hide-methods failed suite-All_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-All_Test_Suite -->
+                      <a href="#" panel-name="suite-All_Test_Suite" class="show-methods failed suite-All_Test_Suite"> (show)</a> <!-- show-methods failed suite-All_Test_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-All_Test_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="runners.RunTest" class="method navigator-link" hash-for-method="runScenario(&quot;browse categories with response code 201&quot;, &quot;spotify browse&quot;)">runScenario("browse categories with response code 201", "spotify browse")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-All_Test_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-All_Test_Suite" class="hide-methods passed suite-All_Test_Suite"> (hide)</a> <!-- hide-methods passed suite-All_Test_Suite -->
+                      <a href="#" panel-name="suite-All_Test_Suite" class="show-methods passed suite-All_Test_Suite"> (show)</a> <!-- show-methods passed suite-All_Test_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-All_Test_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="runners.RunTest" class="method navigator-link" hash-for-method="runScenario(&quot;browse all the categories&quot;, &quot;spotify browse&quot;)">runScenario("browse all the categories", "spotify browse")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-All_Test_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-All_Test_Suite" class="panel All_Test_Suite">
+          <div class="suite-All_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">runners.RunTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;browse categories with response code 201&quot;, &quot;spotify browse&quot;)">
+                  </a> <!-- runScenario("browse categories with response code 201", "spotify browse") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("browse categories with response code 201","spotify browse")</span>
+                  <div class="stack-trace">java.lang.RuntimeException: 
+Expected: &quot;201&quot;
+     but: was &quot;200&quot;
+	at stepDefinations.BrowseSteps.user_should_receive_the_response_code(BrowseSteps.java:66)
+	at ✽.user should receive the response code 201.(file:///Users/sushil/Documents/parabanks/APIAutomation/APIAuto2/src/test/java/features/browseCategories.feature:12)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-failed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">runners.RunTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;browse all the categories&quot;, &quot;spotify browse&quot;)">
+                  </a> <!-- runScenario("browse all the categories", "spotify browse") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("browse all the categories","spotify browse")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+        </div> <!-- panel All_Test_Suite -->
+        <div panel-name="test-xml-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/sushil/Documents/parabanks/APIAutomation/APIAuto2/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;All Test Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;org.uncommons.reportng.HTMLReporter&quot;/&gt;
+    &lt;listener class-name=&quot;org.uncommons.reportng.JUnitXMLReporter&quot;/&gt;
+    &lt;listener class-name=&quot;listener.StepListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;/Users/sushil/Documents/parabanks/APIAutomation/APIAuto2&quot; verbose=&quot;2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;runners.RunTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- /Users/sushil/Documents/parabanks/APIAutomation/APIAuto2 --&gt;
+&lt;/suite&gt; &lt;!-- All Test Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for All Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">/Users/sushil/Documents/parabanks/APIAutomation/APIAuto2 (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for All Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">cucumber</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">runScenario</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for All Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_All_Test_Suite');
+function tableData_All_Test_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(2);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'runScenario')
+data.setCell(0, 2, 'runners.RunTest')
+data.setCell(0, 3, 12519);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'runScenario')
+data.setCell(1, 2, 'runners.RunTest')
+data.setCell(1, 3, 5535);
+window.suiteTableData['All_Test_Suite']= { tableData: data, tableDiv: 'times-div-All_Test_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 18 seconds</span>
+              <div id="times-div-All_Test_Suite">
+              </div> <!-- times-div-All_Test_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for All Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">runScenario("browse all the categories", "spotify browse")</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">when_environment_is_up_and_working</span>
+                <span class="reporter-method-output">{
+  "categories" : {
+    "href" : "https://api.spotify.com/v1/browse/categories?country=IN&offset=0&limit=20",
+    "items" : [ {
+      "href" : "https://api.spotify.com/v1/browse/categories/toplists",
+      "icons" : [ {
+        "height" : 275,
+        "url" : "https://t.scdn.co/media/derived/toplists_11160599e6a04ac5d6f2757f5511778f_0_0_275_275.jpg",
+        "width" : 275
+      } ],
+      "id" : "toplists",
+      "name" : "Top Lists"
+    }, {
+      "href" : "https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFHCxg5H5PtqW",
+      "icons" : [ {
+        "height" : null,
+        "url" : "https://t.scdn.co/images/8a0fabf4d537486e9b5a4623c921f77e.jpeg",
+        "width" : null
+      } ],
+      "id" : "0JQ5DAqbMKFHCxg5H5PtqW",
+      "name" : "Bollywood"
+    }, {
+      "href" : "https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFKSopHMaeIeI",
+      "icons" : [ {
+        "height" : null,
+        "url" : "https://t.scdn.co/images/11e89d14d7844b7eb3d26619cb662a9b.jpeg",
+        "width" : null
+      } ],
+      "id" : "0JQ5DAqbMKFKSopHMaeIeI",
+      "name" : "Punjabi"
+    }, {
+      "href" : "https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFE33XAyDiPIr",
+      "icons" : [ {
+        "height" : null,
+        "url" : "https://t.scdn.co/images/2117dadfdd254825b3fbc52e3652ed56.jpeg",
+        "width" : null
+      } ],
+      "id" : "0JQ5DAqbMKFE33XAyDiPIr",
+      "name" : "Tamil"
+    }, {
+      "href" : "https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFIdOwkMWR5at",
+      "icons" : [ {
+        "height" : null,
+        "url" : "https://t.scdn.co/images/96b5132876eb4e818723555ce365cd87.jpeg",
+        "width" : null
+      } ],
+      "id" : "0JQ5DAqbMKFIdOwkMWR5at",
+      "name" : "Telugu"
+    }, {
+      "href" : "https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFCWjUTdzaG0e",
+      "icons" : [ {
+        "height" : null,
+        "url" : "https://t.scdn.co/images/fe06caf056474bc58862591cd60b57fc.jpeg",
+        "width" : null
+      } ],
+      "id" : "0JQ5DAqbMKFCWjUTdzaG0e",
+      "name" : "Indie"
+    }, {
+      "href" : "https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFCfObibaOZbv",
+      "icons" : [ {
+        "height" : null,
+        "url" : "https://t.scdn.co/images/0d39395309ba47838ef12ce987f19d16.jpeg",
+        "width" : null
+      } ],
+      "id" : "0JQ5DAqbMKFCfObibaOZbv",
+      "name" : "Gaming"
+    }, {
+      "href" : "https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFPw634sFwguI",
+      "icons" : [ {
+        "height" : null,
+        "url" : "https://t.scdn.co/images/084155aeaa724ea1bd393a017d67b709",
+        "width" : null
+      } ],
+      "id" : "0JQ5DAqbMKFPw634sFwguI",
+      "name" : "EQUAL"
+    }, {
+      "href" : "https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFEC4WFtoNRpw",
+      "icons" : [ {
+        "height" : 274,
+        "url" : "https://t.scdn.co/media/derived/pop-274x274_447148649685019f5e2a03a39e78ba52_0_0_274_274.jpg",
+        "width" : 274
+      } ],
+      "id" : "0JQ5DAqbMKFEC4WFtoNRpw",
+      "name" : "Pop"
+    }, {
+      "href" : "https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFOOxftoKZxod",
+      "icons" : [ {
+        "height" : null,
+        "url" : "https://t.scdn.co/images/c6677aa51acf4121b66b9d1f231bd427.png",
+        "width" : null
+      } ],
+      "id" : "0JQ5DAqbMKFOOxftoKZxod",
+      "name" : "RADAR"
+    }, {
+      "href" : "https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFImHYGo3eTSg",
+      "icons" : [ {
+        "height" : null,
+        "url" : "https://t.scdn.co/images/16e40e64d2a74fa8a0a020d456e6541d.jpeg",
+        "width" : null
+      } ],
+      "id" : "0JQ5DAqbMKFImHYGo3eTSg",
+      "name" : "Fresh Finds"
+    }, {
+      "href" : "https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFOx2X0qlR9iG",
+      "icons" : [ {
+        "height" : null,
+        "url" : "https://t.scdn.co/images/713254a577a64338a450481329f0d83f.jpeg",
+        "width" : null
+      } ],
+      "id" : "0JQ5DAqbMKFOx2X0qlR9iG",
+      "name" : "Marathi"
+    }, {
+      "href" : "https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFLb2EqgLtpjC",
+      "icons" : [ {
+        "height" : null,
+        "url" : "https://t.scdn.co/images/3710b68657574bc79df14bd74629e5ac",
+        "width" : null
+      } ],
+      "id" : "0JQ5DAqbMKFLb2EqgLtpjC",
+      "name" : "Wellness"
+    }, {
+      "href" : "https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFOTGtSOysEXE",
+      "icons" : [ {
+        "height" : null,
+        "url" : "https://t.scdn.co/images/a1817e719adc4716b8f7a8ccecf64d9b",
+        "width" : null
+      } ],
+      "id" : "0JQ5DAqbMKFOTGtSOysEXE",
+      "name" : "Devotional"
+    }, {
+      "href" : "https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFAEu5QlAkwvV",
+      "icons" : [ {
+        "height" : null,
+        "url" : "https://t.scdn.co/images/0dcbe54ffb604b37b1ae96223f2524be",
+        "width" : null
+      } ],
+      "id" : "0JQ5DAqbMKFAEu5QlAkwvV",
+      "name" : "Indian Classical"
+    }, {
+      "href" : "https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFAUsdyVjCQuL",
+      "icons" : [ {
+        "height" : 274,
+        "url" : "https://t.scdn.co/media/derived/romance-274x274_8100794c94847b6d27858bed6fa4d91b_0_0_274_274.jpg",
+        "width" : 274
+      } ],
+      "id" : "0JQ5DAqbMKFAUsdyVjCQuL",
+      "name" : "Romance"
+    }, {
+      "href" : "https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFDKyRxRDLIbk",
+      "icons" : [ {
+        "height" : null,
+        "url" : "https://t.scdn.co/images/dec76a385201436281efb6796a54f479.jpeg",
+        "width" : null
+      } ],
+      "id" : "0JQ5DAqbMKFDKyRxRDLIbk",
+      "name" : "Happy Holidays"
+    }, {
+      "href" : "https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFIVNxQgRNSg0",
+      "icons" : [ {
+        "height" : null,
+        "url" : "https://t.scdn.co/images/b611cf5145764c64b80e91ccd5f357c8",
+        "width" : null
+      } ],
+      "id" : "0JQ5DAqbMKFIVNxQgRNSg0",
+      "name" : "Decades"
+    }, {
+      "href" : "https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFGvOw3O4nLAf",
+      "icons" : [ {
+        "height" : null,
+        "url" : "https://t.scdn.co/images/2078afd91e4d431eb19efc5bee5ab131.jpeg",
+        "width" : null
+      } ],
+      "id" : "0JQ5DAqbMKFGvOw3O4nLAf",
+      "name" : "K-Pop"
+    }, {
+      "href" : "https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFEOEBCABAxo9",
+      "icons" : [ {
+        "height" : null,
+        "url" : "https://t.scdn.co/images/1a416fb97f5647858c7f09c9cb6e7301",
+        "width" : null
+      } ],
+      "id" : "0JQ5DAqbMKFEOEBCABAxo9",
+      "name" : "Netflix"
+    } ],
+    "limit" : 20,
+    "next" : "https://api.spotify.com/v1/browse/categories?country=IN&offset=20&limit=20",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 55
+  }
+}</span>
+                <span class="reporter-method-output">user_should_receive_the_response_code</span>
+                <span class="reporter-method-output">200</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">runScenario("browse categories with response code 201", "spotify browse")</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">when_environment_is_up_and_working</span>
+                <span class="reporter-method-output">{
+  "categories" : {
+    "href" : "https://api.spotify.com/v1/browse/categories?country=IN&offset=0&limit=20",
+    "items" : [ {
+      "href" : "https://api.spotify.com/v1/browse/categories/toplists",
+      "icons" : [ {
+        "height" : 275,
+        "url" : "https://t.scdn.co/media/derived/toplists_11160599e6a04ac5d6f2757f5511778f_0_0_275_275.jpg",
+        "width" : 275
+      } ],
+      "id" : "toplists",
+      "name" : "Top Lists"
+    }, {
+      "href" : "https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFHCxg5H5PtqW",
+      "icons" : [ {
+        "height" : null,
+        "url" : "https://t.scdn.co/images/8a0fabf4d537486e9b5a4623c921f77e.jpeg",
+        "width" : null
+      } ],
+      "id" : "0JQ5DAqbMKFHCxg5H5PtqW",
+      "name" : "Bollywood"
+    }, {
+      "href" : "https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFKSopHMaeIeI",
+      "icons" : [ {
+        "height" : null,
+        "url" : "https://t.scdn.co/images/11e89d14d7844b7eb3d26619cb662a9b.jpeg",
+        "width" : null
+      } ],
+      "id" : "0JQ5DAqbMKFKSopHMaeIeI",
+      "name" : "Punjabi"
+    }, {
+      "href" : "https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFE33XAyDiPIr",
+      "icons" : [ {
+        "height" : null,
+        "url" : "https://t.scdn.co/images/2117dadfdd254825b3fbc52e3652ed56.jpeg",
+        "width" : null
+      } ],
+      "id" : "0JQ5DAqbMKFE33XAyDiPIr",
+      "name" : "Tamil"
+    }, {
+      "href" : "https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFIdOwkMWR5at",
+      "icons" : [ {
+        "height" : null,
+        "url" : "https://t.scdn.co/images/96b5132876eb4e818723555ce365cd87.jpeg",
+        "width" : null
+      } ],
+      "id" : "0JQ5DAqbMKFIdOwkMWR5at",
+      "name" : "Telugu"
+    }, {
+      "href" : "https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFCWjUTdzaG0e",
+      "icons" : [ {
+        "height" : null,
+        "url" : "https://t.scdn.co/images/fe06caf056474bc58862591cd60b57fc.jpeg",
+        "width" : null
+      } ],
+      "id" : "0JQ5DAqbMKFCWjUTdzaG0e",
+      "name" : "Indie"
+    }, {
+      "href" : "https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFCfObibaOZbv",
+      "icons" : [ {
+        "height" : null,
+        "url" : "https://t.scdn.co/images/0d39395309ba47838ef12ce987f19d16.jpeg",
+        "width" : null
+      } ],
+      "id" : "0JQ5DAqbMKFCfObibaOZbv",
+      "name" : "Gaming"
+    }, {
+      "href" : "https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFPw634sFwguI",
+      "icons" : [ {
+        "height" : null,
+        "url" : "https://t.scdn.co/images/084155aeaa724ea1bd393a017d67b709",
+        "width" : null
+      } ],
+      "id" : "0JQ5DAqbMKFPw634sFwguI",
+      "name" : "EQUAL"
+    }, {
+      "href" : "https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFEC4WFtoNRpw",
+      "icons" : [ {
+        "height" : 274,
+        "url" : "https://t.scdn.co/media/derived/pop-274x274_447148649685019f5e2a03a39e78ba52_0_0_274_274.jpg",
+        "width" : 274
+      } ],
+      "id" : "0JQ5DAqbMKFEC4WFtoNRpw",
+      "name" : "Pop"
+    }, {
+      "href" : "https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFOOxftoKZxod",
+      "icons" : [ {
+        "height" : null,
+        "url" : "https://t.scdn.co/images/c6677aa51acf4121b66b9d1f231bd427.png",
+        "width" : null
+      } ],
+      "id" : "0JQ5DAqbMKFOOxftoKZxod",
+      "name" : "RADAR"
+    }, {
+      "href" : "https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFImHYGo3eTSg",
+      "icons" : [ {
+        "height" : null,
+        "url" : "https://t.scdn.co/images/16e40e64d2a74fa8a0a020d456e6541d.jpeg",
+        "width" : null
+      } ],
+      "id" : "0JQ5DAqbMKFImHYGo3eTSg",
+      "name" : "Fresh Finds"
+    }, {
+      "href" : "https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFOx2X0qlR9iG",
+      "icons" : [ {
+        "height" : null,
+        "url" : "https://t.scdn.co/images/713254a577a64338a450481329f0d83f.jpeg",
+        "width" : null
+      } ],
+      "id" : "0JQ5DAqbMKFOx2X0qlR9iG",
+      "name" : "Marathi"
+    }, {
+      "href" : "https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFLb2EqgLtpjC",
+      "icons" : [ {
+        "height" : null,
+        "url" : "https://t.scdn.co/images/3710b68657574bc79df14bd74629e5ac",
+        "width" : null
+      } ],
+      "id" : "0JQ5DAqbMKFLb2EqgLtpjC",
+      "name" : "Wellness"
+    }, {
+      "href" : "https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFOTGtSOysEXE",
+      "icons" : [ {
+        "height" : null,
+        "url" : "https://t.scdn.co/images/a1817e719adc4716b8f7a8ccecf64d9b",
+        "width" : null
+      } ],
+      "id" : "0JQ5DAqbMKFOTGtSOysEXE",
+      "name" : "Devotional"
+    }, {
+      "href" : "https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFAEu5QlAkwvV",
+      "icons" : [ {
+        "height" : null,
+        "url" : "https://t.scdn.co/images/0dcbe54ffb604b37b1ae96223f2524be",
+        "width" : null
+      } ],
+      "id" : "0JQ5DAqbMKFAEu5QlAkwvV",
+      "name" : "Indian Classical"
+    }, {
+      "href" : "https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFAUsdyVjCQuL",
+      "icons" : [ {
+        "height" : 274,
+        "url" : "https://t.scdn.co/media/derived/romance-274x274_8100794c94847b6d27858bed6fa4d91b_0_0_274_274.jpg",
+        "width" : 274
+      } ],
+      "id" : "0JQ5DAqbMKFAUsdyVjCQuL",
+      "name" : "Romance"
+    }, {
+      "href" : "https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFDKyRxRDLIbk",
+      "icons" : [ {
+        "height" : null,
+        "url" : "https://t.scdn.co/images/dec76a385201436281efb6796a54f479.jpeg",
+        "width" : null
+      } ],
+      "id" : "0JQ5DAqbMKFDKyRxRDLIbk",
+      "name" : "Happy Holidays"
+    }, {
+      "href" : "https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFIVNxQgRNSg0",
+      "icons" : [ {
+        "height" : null,
+        "url" : "https://t.scdn.co/images/b611cf5145764c64b80e91ccd5f357c8",
+        "width" : null
+      } ],
+      "id" : "0JQ5DAqbMKFIVNxQgRNSg0",
+      "name" : "Decades"
+    }, {
+      "href" : "https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFGvOw3O4nLAf",
+      "icons" : [ {
+        "height" : null,
+        "url" : "https://t.scdn.co/images/2078afd91e4d431eb19efc5bee5ab131.jpeg",
+        "width" : null
+      } ],
+      "id" : "0JQ5DAqbMKFGvOw3O4nLAf",
+      "name" : "K-Pop"
+    }, {
+      "href" : "https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFEOEBCABAxo9",
+      "icons" : [ {
+        "height" : null,
+        "url" : "https://t.scdn.co/images/1a416fb97f5647858c7f09c9cb6e7301",
+        "width" : null
+      } ],
+      "id" : "0JQ5DAqbMKFEOEBCABAxo9",
+      "name" : "Netflix"
+    } ],
+    "limit" : 20,
+    "next" : "https://api.spotify.com/v1/browse/categories?country=IN&offset=20&limit=20",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 55
+  }
+}</span>
+                <span class="reporter-method-output">user_should_receive_the_response_code</span>
+                <span class="reporter-method-output">200</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">runners.RunTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass(org.testng.TestRunner@45543b88)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("browse categories with response code 201", "spotify browse")</span>
+                <span class="method-start">2193 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("browse all the categories", "spotify browse")</span>
+                <span class="method-start">14944 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">20489 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-suite after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">teardown</span>
+                <span class="method-start">20682 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

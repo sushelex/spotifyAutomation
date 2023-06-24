@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="/Users/sushil/Documents/parabanks/APIAutomation/APIAuto2"
+           tests="3"
+           failures="2"
+           errors="0"
+           skipped="0"
+           time="18.088">
+  <properties />
+            <testcase name="teardown" time="0.034" classname="runners.RunTest">
+                <failure type="java.lang.NullPointerException"
+                  message="(null)"
+              >
+<![CDATA[java.lang.NullPointerException
+  extentSetup.Extent.extentFlush(Extent.java:116)
+  runners.RunTest.teardown(RunTest.java:22)
+  java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.base/java.lang.reflect.Method.invoke(Method.java:566)
+  org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+  org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+  org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+  org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:404)
+  org.testng.SuiteRunner.run(SuiteRunner.java:330)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+  org.testng.TestNG.runSuites(TestNG.java:1099)
+  org.testng.TestNG.run(TestNG.java:1067)
+  com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+  com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="runScenario" time="12.519" classname="runners.RunTest">
+                <failure type="java.lang.RuntimeException"
+                  message="
+Expected: &quot;201&quot;
+     but: was &quot;200&quot;"
+              >
+<![CDATA[java.lang.RuntimeException: 
+Expected: "201"
+     but: was "200"
+  stepDefinations.BrowseSteps.user_should_receive_the_response_code(BrowseSteps.java:66)
+  ✽.user should receive the response code 201.(file:///Users/sushil/Documents/parabanks/APIAutomation/APIAuto2/src/test/java/features/browseCategories.feature:12)
+]]>
+      </failure>
+
+          </testcase>
+  
+  
+            <testcase name="runScenario" time="5.535" classname="runners.RunTest" />
+      
+</testsuite>

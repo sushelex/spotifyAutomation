@@ -1,0 +1,1 @@
+{"uuid":"ea659292-454a-4e1b-ae6c-678d3d11cae6","name":"All Test Suite","children":["1a966cf7-0530-4b15-9360-ff7bcc599666"],"befores":[],"afters":[{"name":"teardown","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1674614698623,"stop":1674614699884}],"start":1674614678686,"stop":1674614699884}
