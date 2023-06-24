@@ -26,6 +26,7 @@ public class BrowseTest
     @Test
     public void testGetCategories_id() throws FileNotFoundException {
         Response response = GET(CATEGORIES, "/0JQ5DAqbMKFGvOw3O4nLAf");
+        System.out.println(response.asString());
         assertThat(response.getStatusCode(), equalTo(200));
 
     }
