@@ -20,6 +20,7 @@ import static stepDefinations.PrePostExecutions.*;
 
 public class BrowseSteps {
     private static Response response;
+
     @Given("when environment is up and working")
     public void when_environment_is_up_and_working()
     {
@@ -66,5 +67,10 @@ public class BrowseSteps {
             throw new RuntimeException(t.getMessage());
         }
 
+    }
+
+    @Then("print the response")
+    public void printTheResponse() {
+        System.out.println(response.asString());
     }
 }
