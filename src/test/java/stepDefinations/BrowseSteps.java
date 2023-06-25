@@ -71,6 +71,7 @@ public class BrowseSteps {
 
     @Then("print the response")
     public void printTheResponse() {
-        System.out.println(response.asString());
+        System.out.println("print the response on console");
+//        System.out.println(response.asString());
     }
 }

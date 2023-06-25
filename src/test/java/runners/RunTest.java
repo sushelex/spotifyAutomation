@@ -10,8 +10,10 @@ import org.testng.annotations.AfterSuite;
 import static extentSetup.Extent.extentFlush;
 
 @RunWith(Cucumber.class)
+
 @CucumberOptions(features = "src/test/java/features", glue = "stepDefinations", plugin = { "pretty", "html:target/cucumber-reports", "listener.StepListener"},
         monochrome = true, tags = "@win"
+
 
 )
 //@CucumberOptions(features = "src/test/java/features", glue = "stepDefinations", plugin = { "pretty", "html:target/cucumber-reports", "listener.StepListener", "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"})
