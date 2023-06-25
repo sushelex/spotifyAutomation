@@ -1,5 +1,9 @@
 Feature: spotify browse
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> c08383d (4)
 =======
 
 >>>>>>> c08383d (4)
@@ -9,6 +13,10 @@ Feature: spotify browse
 #    When user send the get request to get browse end point
     Then print the response
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> c08383d (4)
 =======
 
 >>>>>>> c08383d (4)
