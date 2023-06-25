@@ -10,7 +10,7 @@
 
     <test verbose="2" preserve-order="true" name="/Users/sushil/Documents/parabanks/APIAutomation/APIAuto2">
         <classes>
-            <class name="runners.RunTest">
+            <class name="runners.JenkinRunner">
             </class>
         </classes>
     </test>
