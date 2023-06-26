@@ -7,8 +7,9 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/java/features",
-        glue = "stepDefinations", plugin = { "pretty", "html:target/cucumber-reports", "listener.StepListener"},
-        tags = "@win"
+        glue = "stepDefinations"
+        , plugin = { "pretty", "html:target/cucumber-reports", "listener.StepListener"}
+        , tags = "@win"
 )
 
 public class JenkinRunner extends AbstractTestNGCucumberTests {

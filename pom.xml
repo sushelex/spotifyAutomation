@@ -24,8 +24,9 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.0</version>
+                <version>3.10.1</version>
                 <configuration>
+                    <source>11</source>
                     <release>11</release>  <!--or <release>10</release>-->
                 </configuration>
             </plugin>
@@ -35,17 +36,10 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0-M8</version>
                 <configuration>
-                    <argLine>
-                        -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
-                    </argLine>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>testng.xml</suiteXmlFile>
+                    </suiteXmlFiles>
                 </configuration>
-                <dependencies>
-                    <dependency>
-                        <groupId>org.aspectj</groupId>
-                        <artifactId>aspectjweaver</artifactId>
-                        <version>${aspectj.version}</version>
-                    </dependency>
-                </dependencies>
             </plugin>
             <plugin>
                 <groupId>tech.grasshopper</groupId>
@@ -115,7 +109,7 @@
                     </systemInfoFilePath>
                     <sparkViewOrder>DASHBOARD,TEST,EXCEPTION,CATEGORY,AUTHOR,DEVICE
                     </sparkViewOrder>
-             <!--       <sparkHideLogEvents>true</sparkHideLogEvents>-->
+                    <!--       <sparkHideLogEvents>true</sparkHideLogEvents>-->
                 </configuration>
             </plugin>
         </plugins>
@@ -244,7 +238,7 @@
             <version>5.0.9</version>
         </dependency>
 
-      <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-jvm -->
+        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-jvm -->
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-jvm</artifactId>
